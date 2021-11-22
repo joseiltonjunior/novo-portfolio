@@ -2,7 +2,6 @@ import { SocialLinks } from 'components/SocialLinks';
 
 import { useTranslation } from 'react-i18next';
 
-import picProfile from 'assets/img/pic_profile.jpeg';
 import { Container, TitleAside } from './styles';
 
 export const Aside: React.FC = () => {
@@ -12,7 +11,7 @@ export const Aside: React.FC = () => {
     <Container>
       <div className="aboveContent">
         <img
-          src={picProfile}
+          src="https://avatars.githubusercontent.com/u/47725788?v=4"
           alt="picProfile"
           className="profilePic img-fluid rounded-circle"
         />
