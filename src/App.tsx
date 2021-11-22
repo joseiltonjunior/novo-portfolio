@@ -1,5 +1,6 @@
-import { useCallback } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { ThemeProvider, DefaultTheme } from 'styled-components';
+import i18n from 'i18next';
 
 import { Container } from 'styles';
 import { Aside } from 'components/Aside';
@@ -13,16 +14,30 @@ import { usePersistedState } from 'hooks/usePersistedState';
 
 const App: React.FC = () => {
   const [theme, setTheme] = usePersistedState<DefaultTheme>('theme', light);
+  const [language, setLanguage] = useState('pt_BR');
+
+  const lang = localStorage.getItem('i18nextLng');
 
   const toggleTheme = useCallback(() => {
     setTheme(theme.title === 'light' ? dark : light);
-  }, [setTheme, theme.title]);
+  }, [setTheme, theme]);
+
+  const toggleLanguage = useCallback(() => {
+    setLanguage(language === 'pt_BR' ? 'en_US' : 'pt_BR');
+    i18n.changeLanguage(language);
+  }, [language]);
+
+  useEffect(() => {
+    if (lang) {
+      i18n.changeLanguage(lang);
+    }
+  }, [lang]);
 
   return (
     <ThemeProvider theme={theme}>
       <Container className="App">
         <GlobalStyle />
-        <Header toggleTheme={toggleTheme} />
+        <Header toggleTheme={toggleTheme} toggleLanguage={toggleLanguage} />
         <Aside />
       </Container>
     </ThemeProvider>
