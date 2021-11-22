@@ -13,4 +13,8 @@ export default createGlobalStyle`
     color: ${props => props.theme.colors.text};
     font-family: 'Roboto', sans-serif;
   }
+
+  p, h1, h2, h3, h4, h5 {
+    margin: 0;
+  }
 `;
