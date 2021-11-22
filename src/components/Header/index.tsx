@@ -22,6 +22,7 @@ export const Header: React.FC<HeaderProps> = ({ toggleTheme }) => {
       </div>
 
       <Switch
+        className="switch-input"
         onChange={toggleTheme}
         checked={title === 'dark'}
         checkedIcon={false}
