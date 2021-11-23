@@ -2,12 +2,7 @@ import { FaBars, FaUserCog } from 'react-icons/fa';
 
 import { Container } from './styles';
 
-interface HeaderProps {
-  toggleTheme: () => void;
-  toggleLanguage: () => void;
-}
-
-export const Header: React.FC<HeaderProps> = () => {
+export const Header: React.FC = () => {
   return (
     <Container>
       <div className="button-side-menu">

@@ -9,6 +9,7 @@ export const SocialLinks: React.FC = () => {
       <SocialButton
         name="linkedln"
         type="button"
+        formTarget="_blank"
         onClick={() => {
           window.location.href =
             'https://www.linkedin.com/in/junior-ferreira-318989189';
@@ -19,6 +20,7 @@ export const SocialLinks: React.FC = () => {
       <SocialButton
         name="instagram"
         type="button"
+        formTarget="_blank"
         onClick={() => {
           window.location.href = 'https://www.instagram.com/dvlp.jr';
         }}
@@ -28,6 +30,7 @@ export const SocialLinks: React.FC = () => {
       <SocialButton
         name="github"
         type="button"
+        formTarget="_blank"
         onClick={() => {
           window.location.href = 'https://github.com/joseiltonjunior';
         }}

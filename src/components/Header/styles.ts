@@ -7,14 +7,11 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 30px;
+  padding: 0 20px;
 
   .title-header {
-    p {
-      font-size: 20px;
-      font-family: 'Roboto Medium', sans-serif;
-      margin: 0 0 0 1rem;
-    }
+    font-size: 20px;
+    font-family: 'Roboto Medium', sans-serif;
   }
 
   .button-side-menu {
