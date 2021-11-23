@@ -1,46 +1,45 @@
 import { Select } from 'components/Form/Select';
-import formValidator from 'components/ToolsMenu/formValidator';
-import { yupResolver } from '@hookform/resolvers/yup';
 import React, { useCallback, useEffect } from 'react';
 import { FieldValues, useForm } from 'react-hook-form';
 
-import { Button } from 'components/Form/Button';
-import { FaSave } from 'react-icons/fa';
-import { ButtonGroup } from 'components/Form/ButtonGroup';
+import i18next from 'i18next';
+import { usePersistedState } from 'hooks/usePersistedState';
+import { DefaultTheme } from 'styled-components';
+
+import light from 'styles/themes/light';
+import dark from 'styles/themes/dark';
 import { Container } from './styles';
 
-interface formParam {
-  Theme: string;
-  Language: string;
-}
-
 export const ToolsMenu: React.FC = () => {
+  const [theme, setTheme] = usePersistedState<DefaultTheme>('theme', light);
+
   const {
     register,
     setValue,
-    handleSubmit,
-
     formState: { errors },
-  } = useForm<FieldValues>({
-    resolver: yupResolver(formValidator),
-  });
+  } = useForm<FieldValues>();
 
   const lang = localStorage.getItem('i18nextLng') ?? '';
-  const theme = localStorage.getItem('theme') ?? '';
 
-  const onSubmit = useCallback((data: formParam) => {
-    // eslint-disable-next-line no-console
-    console.log(data);
+  const handleChangeLanguage = useCallback((language: string) => {
+    i18next.changeLanguage(language);
+
+    window.location.reload();
   }, []);
+
+  const handleChangeTheme = useCallback(
+    (theme: string) => {
+      setTheme(theme === 'light' ? light : dark);
+
+      window.location.reload();
+    },
+    [setTheme],
+  );
 
   useEffect(() => {
     setValue('Language', lang);
 
-    if (theme !== '') {
-      const themeFormart = JSON.parse(theme);
-
-      setValue('Theme', themeFormart.title);
-    }
+    setValue('Theme', theme.title);
   }, [lang, setValue, theme]);
 
   return (
@@ -55,45 +54,30 @@ export const ToolsMenu: React.FC = () => {
           <h5 id="offcanvasRightLabel">Configurações</h5>
         </div>
         <div className="offcanvas-body">
-          <form onSubmit={handleSubmit(onSubmit)}>
-            <Select
-              name="Theme"
-              label="Tema"
-              register={register}
-              error={errors.Theme}
-            >
-              <option value="">Selecione</option>
-              <option value="light">Light</option>
-              <option value="dark">Dark</option>
-            </Select>
-            <Select
-              name="Language"
-              label="Idioma"
-              register={register}
-              error={errors.Language}
-            >
-              <option value="">Selecione</option>
-              <option value="en_US">Inglês (USA)</option>
-              <option value="pt_BR">Português (BRL)</option>
-            </Select>
-
-            <ButtonGroup align="center">
-              <button
-                className="btn btn-danger"
-                type="button"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-                onClick={() => {
-                  window.location.reload();
-                }}
-              >
-                Cancelar
-              </button>
-              <Button icon={FaSave} className="btn btn-primary" type="submit">
-                Salvar
-              </Button>
-            </ButtonGroup>
-          </form>
+          <Select
+            name="Theme"
+            label="Tema"
+            register={register}
+            error={errors.Theme}
+            onChange={event => {
+              handleChangeTheme(event.currentTarget.value);
+            }}
+          >
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+          </Select>
+          <Select
+            name="Language"
+            label="Idioma"
+            register={register}
+            onChange={event => {
+              handleChangeLanguage(event.currentTarget.value);
+            }}
+            error={errors.Language}
+          >
+            <option value="en_US">Inglês (USA)</option>
+            <option value="pt_BR">Português (BRL)</option>
+          </Select>
         </div>
       </div>
     </Container>
