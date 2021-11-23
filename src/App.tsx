@@ -3,7 +3,7 @@ import { ThemeProvider, DefaultTheme } from 'styled-components';
 import i18n from 'i18next';
 
 import { Container } from 'styles';
-import { Aside } from 'components/Aside';
+import { SideMenu } from 'components/SideMenu';
 import { Header } from 'components/Header';
 
 import GlobalStyle from 'styles/global';
@@ -11,6 +11,7 @@ import light from 'styles/themes/light';
 import dark from 'styles/themes/dark';
 
 import { usePersistedState } from 'hooks/usePersistedState';
+import { ToolsMenu } from 'components/ToolsMenu';
 
 const App: React.FC = () => {
   const [theme, setTheme] = usePersistedState<DefaultTheme>('theme', light);
@@ -38,7 +39,8 @@ const App: React.FC = () => {
       <Container className="App">
         <GlobalStyle />
         <Header toggleTheme={toggleTheme} toggleLanguage={toggleLanguage} />
-        <Aside />
+        <SideMenu />
+        <ToolsMenu />
       </Container>
     </ThemeProvider>
   );
