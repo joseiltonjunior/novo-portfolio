@@ -1,6 +1,5 @@
-import { FaReact } from 'react-icons/fa';
+import { FaBars, FaUserCog } from 'react-icons/fa';
 
-import { FloatMenu } from 'components/FloatMenu';
 import { Container } from './styles';
 
 interface HeaderProps {
@@ -8,19 +7,36 @@ interface HeaderProps {
   toggleLanguage: () => void;
 }
 
-export const Header: React.FC<HeaderProps> = ({
-  toggleTheme,
-  toggleLanguage,
-}) => {
+export const Header: React.FC<HeaderProps> = () => {
   return (
     <Container>
-      <div className="contentIcon d-flex align-items-center">
-        <FaReact size={40} />
+      <div className="button-side-menu">
+        <button
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasLeft"
+          aria-controls="offcanvasLeft"
+        >
+          <FaBars fill="#fff" size={25} />
+        </button>
+      </div>
 
+      <div className="title-header">
         <p>Junior Ferreira</p>
       </div>
 
-      <FloatMenu toggleTheme={toggleTheme} toggleLanguage={toggleLanguage} />
+      <div className="button-tools-menu">
+        <p>
+          <button
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"
+          >
+            <FaUserCog fill="#fff" size={25} />
+          </button>
+        </p>
+      </div>
     </Container>
   );
 };
