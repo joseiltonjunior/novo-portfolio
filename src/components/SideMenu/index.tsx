@@ -28,7 +28,7 @@ export const SideMenu: React.FC = () => {
 
           <SocialLinks />
 
-          <div>
+          {/* <nav>
             <a href="#experience">
               <button
                 type="button"
@@ -38,7 +38,40 @@ export const SideMenu: React.FC = () => {
                 experience
               </button>
             </a>
-          </div>
+          </nav> */}
+        </div>
+      </div>
+
+      <div
+        className="sidemenu"
+        tabIndex={-1}
+        id="offcanvasLeft"
+        aria-labelledby="offcanvasLeft"
+      >
+        <div className="offcanvas-body">
+          <img
+            src="https://joseiltonjunior.github.io/Portfolio/img/perfil.jpeg"
+            alt="picProfile"
+            className="profile-pic img-fluid rounded-circle"
+          />
+
+          <p className="offcanvas-title" id="offcanvas-title">
+            Junior Ferreira
+          </p>
+
+          <SocialLinks />
+
+          <nav>
+            <a href="#experience">
+              <button
+                type="button"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              >
+                experience
+              </button>
+            </a>
+          </nav>
         </div>
       </div>
     </Container>

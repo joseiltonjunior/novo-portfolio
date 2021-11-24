@@ -6,6 +6,7 @@ import { Container, SocialButton } from './styles';
 export const SocialLinks: React.FC = () => {
   return (
     <Container>
+      <nav />
       <a
         href="https://www.linkedin.com/in/junior-ferreira-318989189"
         target="_blank"

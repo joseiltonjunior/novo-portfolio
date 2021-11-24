@@ -9,8 +9,10 @@ export const Layout: React.FC = () => {
   return (
     <Container>
       <Header />
-      <SideMenu />
       <ToolsMenu />
+
+      <SideMenu />
+
       <Content />
     </Container>
   );
