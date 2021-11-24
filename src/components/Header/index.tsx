@@ -16,10 +16,6 @@ export const Header: React.FC = () => {
         </button>
       </div>
 
-      {/* <div className="title-header">
-        <p>Junior Ferreira</p>
-      </div> */}
-
       <div className="button-tools-menu">
         <p>
           <button

@@ -7,7 +7,7 @@ export const Container = styled.div`
     background: linear-gradient(
       to bottom,
       ${props => props.theme.colors.primary},
-      #f5f5f5
+      rgba(155, 155, 155, 0.5)
     );
   }
 
