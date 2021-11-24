@@ -6,37 +6,35 @@ import { Container, SocialButton } from './styles';
 export const SocialLinks: React.FC = () => {
   return (
     <Container>
-      <SocialButton
-        name="linkedln"
-        type="button"
-        formTarget="_blank"
-        onClick={() => {
-          window.location.href =
-            'https://www.linkedin.com/in/junior-ferreira-318989189';
-        }}
+      <a
+        href="https://www.linkedin.com/in/junior-ferreira-318989189"
+        target="_blank"
+        rel="noreferrer"
       >
-        <FaLinkedinIn />
-      </SocialButton>
-      <SocialButton
-        name="instagram"
-        type="button"
-        formTarget="_blank"
-        onClick={() => {
-          window.location.href = 'https://www.instagram.com/dvlp.jr';
-        }}
+        <SocialButton name="linkedln" type="button">
+          <FaLinkedinIn />
+        </SocialButton>
+      </a>
+
+      <a
+        href="https://www.instagram.com/dvlp.jr/"
+        target="_blank"
+        rel="noopener noreferrer"
       >
-        <FaInstagram />
-      </SocialButton>
-      <SocialButton
-        name="github"
-        type="button"
-        formTarget="_blank"
-        onClick={() => {
-          window.location.href = 'https://github.com/joseiltonjunior';
-        }}
+        <SocialButton name="instagram" type="button">
+          <FaInstagram />
+        </SocialButton>
+      </a>
+
+      <a
+        href="http://github.com/joseiltonjunior"
+        target="_blank"
+        rel="noopener noreferrer"
       >
-        <FaGithub />
-      </SocialButton>
+        <SocialButton name="github" type="button">
+          <FaGithub />
+        </SocialButton>
+      </a>
     </Container>
   );
 };
