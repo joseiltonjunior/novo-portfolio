@@ -7,21 +7,21 @@ import experience from './experience.json';
 export const SectionExperience: React.FC = () => {
   return (
     <Container id="experience">
-      <p className="title-experience">Experiência</p>
+      <p className="title-experience">Experiências</p>
 
       <div className="content-experience">
         {experience.map((item, index) => (
           <div key={index}>
-            <div className="d-flex justify-content-between align-items-center">
-              <div>
-                <p>{item.CARGO.toUpperCase()}</p>
-                <p>{item.NOME_EMPRESA}</p>
+            <div>
+              <p className="font-office">{item.CARGO.toUpperCase()}</p>
+              <div className="d-flex justify-content-between align-items-center">
+                <p className="font-small">{item.NOME_EMPRESA}</p>
+                <p className="font-small">{item.TEMPO}</p>
               </div>
-              <p>{item.TEMPO}</p>
             </div>
-            <p>{item.ATIVIDADES}</p>
+            <p className="font-activities">{item.ATIVIDADES}</p>
 
-            <hr />
+            {index + 1 !== experience.length && <hr />}
           </div>
         ))}
       </div>
