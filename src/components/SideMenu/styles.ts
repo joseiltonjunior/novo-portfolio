@@ -1,9 +1,13 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+  position: fixed;
+
   .offcanvas {
-    max-width: 300px;
+    width: 300px;
+    height: 100vh;
     color: #f5f5f5;
+
     background: linear-gradient(
       to bottom,
       ${props => props.theme.colors.primary},
@@ -11,11 +15,37 @@ export const Container = styled.div`
     );
   }
 
+  .button-tools-menu {
+    button {
+      border: 0px;
+      background-color: transparent;
+    }
+
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .sidemenu {
+    width: 300px;
+    height: 100vh;
+    color: #f5f5f5;
+
+    background: linear-gradient(
+      to bottom,
+      ${props => props.theme.colors.primary},
+      rgba(155, 155, 155, 0.5)
+    );
+
+    @media screen and (max-width: 500px) {
+      display: none;
+    }
+  }
+
   .offcanvas-body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 10px;
 
     p {
       font-size: 20px;
