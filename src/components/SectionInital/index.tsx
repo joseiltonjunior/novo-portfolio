@@ -5,7 +5,7 @@ import { useTrail, animated as a } from 'react-spring';
 import { Container, Background } from './styles';
 
 export const SectionInital: React.FC = () => {
-  const items = ['Desenvolvedor Front-end', 'Mobile', 'Web'];
+  const items = ['DJ/Produtor', 'Desenvolvedor Front-end', 'Mobile', 'Web'];
   const config = { mass: 5, tension: 2000, friction: 200 };
 
   const [toggle, setToggle] = useState(true);

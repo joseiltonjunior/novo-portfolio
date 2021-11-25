@@ -1,4 +1,5 @@
 import { SocialLinks } from 'components/SocialLinks';
+import { MdSettingsSuggest } from 'react-icons/md';
 
 // import { useTranslation } from 'react-i18next';
 
@@ -16,6 +17,19 @@ export const SideMenu: React.FC = () => {
         aria-labelledby="offcanvasLeft"
       >
         <div className="offcanvas-body">
+          <div className="button-tools-menu">
+            <p>
+              <button
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight"
+              >
+                <MdSettingsSuggest fill="#fff" size={25} />
+              </button>
+            </p>
+          </div>
+
           <img
             src="https://joseiltonjunior.github.io/Portfolio/img/perfil.jpeg"
             alt="picProfile"
@@ -49,6 +63,19 @@ export const SideMenu: React.FC = () => {
         aria-labelledby="offcanvasLeft"
       >
         <div className="offcanvas-body">
+          <div className="button-tools-menu">
+            <p>
+              <button
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight"
+              >
+                <MdSettingsSuggest fill="#fff" size={25} />
+              </button>
+            </p>
+          </div>
+
           <img
             src="https://joseiltonjunior.github.io/Portfolio/img/perfil.jpeg"
             alt="picProfile"
@@ -61,7 +88,7 @@ export const SideMenu: React.FC = () => {
 
           <SocialLinks />
 
-          <nav>
+          {/* <nav>
             <a href="#experience">
               <button
                 type="button"
@@ -71,7 +98,7 @@ export const SideMenu: React.FC = () => {
                 experience
               </button>
             </a>
-          </nav>
+          </nav> */}
         </div>
       </div>
     </Container>

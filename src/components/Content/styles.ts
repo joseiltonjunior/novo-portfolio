@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  margin-top: 60px;
+  /* margin-top: 60px; */
   margin-left: 300px;
   overflow-y: auto;
 
