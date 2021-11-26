@@ -1,3 +1,4 @@
+import SectionAbout from 'components/SectionAbout';
 import { SectionExperience } from 'components/SectionExperience';
 import { SectionInital } from 'components/SectionInital';
 
@@ -7,7 +8,7 @@ export const Content: React.FC = () => {
   return (
     <Container>
       <SectionInital />
-
+      <SectionAbout />
       <SectionExperience />
     </Container>
   );

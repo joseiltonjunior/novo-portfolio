@@ -3,18 +3,6 @@ import styled from 'styled-components';
 export const Container = styled.div`
   position: fixed;
 
-  .offcanvas {
-    width: 300px;
-    height: 100vh;
-    color: #f5f5f5;
-
-    background: linear-gradient(
-      to bottom,
-      ${props => props.theme.colors.primary},
-      rgba(155, 155, 155, 0.5)
-    );
-  }
-
   .button-tools-menu {
     button {
       border: 0px;
@@ -26,8 +14,20 @@ export const Container = styled.div`
     justify-content: flex-end;
   }
 
+  .offcanvas {
+    width: 18rem;
+    height: 100vh;
+    color: #f5f5f5;
+
+    background: linear-gradient(
+      to bottom,
+      ${props => props.theme.colors.primary},
+      rgba(155, 155, 155, 0.5)
+    );
+  }
+
   .sidemenu {
-    width: 300px;
+    width: 18rem;
     height: 100vh;
     color: #f5f5f5;
 
@@ -54,8 +54,8 @@ export const Container = styled.div`
     }
 
     .profile-pic {
-      width: 130px;
-      height: 130px;
+      width: 9rem;
+      height: 9rem;
       border: 0.4rem solid rgba(255, 255, 255, 0.2);
       margin-bottom: 20px;
     }

@@ -1,5 +1,4 @@
 import { useState } from 'react';
-
 import { useTrail, animated as a } from 'react-spring';
 
 import { Container, Background } from './styles';
