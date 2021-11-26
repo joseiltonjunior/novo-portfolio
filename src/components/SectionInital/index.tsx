@@ -18,7 +18,7 @@ export const SectionInital: React.FC = () => {
 
   return (
     <Container
-      id="initial"
+      id="home"
       onMouseLeave={() => {
         setToggle(false);
       }}

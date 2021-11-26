@@ -2,7 +2,7 @@ import { Container } from './styles';
 
 const SectionAbout: React.FC = () => {
   return (
-    <Container>
+    <Container id="about">
       <div className="content-about">
         <p className="title-about">Sobre</p>
         <p className="text-description">
