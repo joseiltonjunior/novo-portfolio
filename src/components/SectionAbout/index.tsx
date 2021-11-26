@@ -12,8 +12,8 @@ const SectionAbout: React.FC = () => {
         </p>
         <p className="text-description">
           Em busca de novos desafios para evoluir como pessoa, melhorar minhas
-          Skills e conhecer novas Tecnologias, afins de me tornar um
-          Especialista Front-end (Mobile e Web).
+          Skills e conhecer novas Tecnologias, afim de me tornar um Especialista
+          (Front-end, Mobile e Web).
         </p>
       </div>
     </Container>
