@@ -4,11 +4,11 @@ import styled from 'styled-components';
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 1rem 3rem 2rem;
+  margin: 0 3rem;
   align-items: center;
 
   @media screen and (max-width: 400px) {
-    margin: 1rem 1rem 2rem;
+    margin: 0 1rem;
   }
 
   .content-experience {

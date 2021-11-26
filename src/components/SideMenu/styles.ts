@@ -37,7 +37,7 @@ export const Container = styled.div`
       rgba(155, 155, 155, 0.5)
     );
 
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 900px) {
       display: none;
     }
   }
