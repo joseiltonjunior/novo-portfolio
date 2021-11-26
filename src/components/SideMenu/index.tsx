@@ -42,17 +42,35 @@ export const SideMenu: React.FC = () => {
 
           <SocialLinks />
 
-          {/* <nav>
+          <div className="nav-list">
+            <a href="#home">
+              <button
+                type="button"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              >
+                Home
+              </button>
+            </a>
+            <a href="#about">
+              <button
+                type="button"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              >
+                Sobre
+              </button>
+            </a>
             <a href="#experience">
               <button
                 type="button"
                 data-bs-dismiss="offcanvas"
                 aria-label="Close"
               >
-                experience
+                Experiências
               </button>
             </a>
-          </nav> */}
+          </div>
         </div>
       </div>
 
@@ -88,17 +106,35 @@ export const SideMenu: React.FC = () => {
 
           <SocialLinks />
 
-          {/* <nav>
+          <div className="nav-list">
+            <a href="#home">
+              <button
+                type="button"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              >
+                Home
+              </button>
+            </a>
+            <a href="#about">
+              <button
+                type="button"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              >
+                Sobre
+              </button>
+            </a>
             <a href="#experience">
               <button
                 type="button"
                 data-bs-dismiss="offcanvas"
                 aria-label="Close"
               >
-                experience
+                Experiências
               </button>
             </a>
-          </nav> */}
+          </div>
         </div>
       </div>
     </Container>

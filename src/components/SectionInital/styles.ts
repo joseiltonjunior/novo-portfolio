@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import backgroundImg from 'assets/img/background.jpg';
+import backgroundImg from 'assets/img/background2.jpg';
 
 export const Container = styled.div``;
 
@@ -41,6 +41,6 @@ export const Background = styled.div`
   .trails-text {
     font-size: 1.3em;
 
-    text-shadow: 0 0 10px #030b16;
+    text-shadow: 1px 1px 1px #030b16;
   }
 `;

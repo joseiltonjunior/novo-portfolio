@@ -16,7 +16,7 @@ export const Container = styled.div`
     z-index: 1000;
     margin: 20px;
 
-    @media screen and (min-width: 400px) {
+    @media screen and (min-width: 900px) {
       display: none;
     }
   }

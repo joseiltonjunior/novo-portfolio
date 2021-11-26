@@ -1,19 +1,8 @@
+import { shade } from 'polished';
 import styled from 'styled-components';
 
 export const Container = styled.div`
   position: fixed;
-
-  .offcanvas {
-    width: 300px;
-    height: 100vh;
-    color: #f5f5f5;
-
-    background: linear-gradient(
-      to bottom,
-      ${props => props.theme.colors.primary},
-      rgba(155, 155, 155, 0.5)
-    );
-  }
 
   .button-tools-menu {
     button {
@@ -26,8 +15,20 @@ export const Container = styled.div`
     justify-content: flex-end;
   }
 
+  .offcanvas {
+    width: 18rem;
+    height: 100vh;
+    color: #f5f5f5;
+
+    background: linear-gradient(
+      to bottom,
+      ${props => props.theme.colors.primary},
+      rgba(155, 155, 155, 0.5)
+    );
+  }
+
   .sidemenu {
-    width: 300px;
+    width: 18rem;
     height: 100vh;
     color: #f5f5f5;
 
@@ -37,7 +38,7 @@ export const Container = styled.div`
       rgba(155, 155, 155, 0.5)
     );
 
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 900px) {
       display: none;
     }
   }
@@ -48,16 +49,39 @@ export const Container = styled.div`
     align-items: center;
 
     p {
-      font-size: 20px;
+      font-size: 1.5rem;
       font-family: 'Roboto Medium';
       margin-bottom: 10px;
     }
 
     .profile-pic {
-      width: 130px;
-      height: 130px;
+      width: 9rem;
+      height: 9rem;
       border: 0.4rem solid rgba(255, 255, 255, 0.2);
       margin-bottom: 20px;
+    }
+  }
+
+  .nav-list {
+    margin-top: 2rem;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+
+    button {
+      border: 0;
+      background-color: transparent;
+      height: 40px;
+      width: 100%;
+      border-radius: 6px;
+
+      font-size: 1.1rem;
+      font-family: 'Roboto Regular';
+
+      color: #f5f5f5;
+      :hover {
+        background-color: ${shade(0.1, 'rgba(155, 155, 155, 0.5)')};
+      }
     }
   }
 `;

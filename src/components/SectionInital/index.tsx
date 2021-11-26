@@ -1,5 +1,4 @@
 import { useState } from 'react';
-
 import { useTrail, animated as a } from 'react-spring';
 
 import { Container, Background } from './styles';
@@ -19,7 +18,7 @@ export const SectionInital: React.FC = () => {
 
   return (
     <Container
-      id="initial"
+      id="home"
       onMouseLeave={() => {
         setToggle(false);
       }}
