@@ -1,5 +1,5 @@
 export const TRANSLATIONS_EN_US = {
-  developerTitle: 'Software Developer',
+  developerTitle: 'Front-end Developer',
   producerTitle: 'DJ/Producer',
   experienceTitle: 'Experiences',
   aboutTitle: 'About',
@@ -7,4 +7,5 @@ export const TRANSLATIONS_EN_US = {
     'Jr. Developer, with 2 years of experience with Front-end projects (Mobile and Web), developed in React, React Native, JavaScript, TypeScript and their respective ecosystems.',
   aboutTextSecondary:
     'Looking for new challenges to evolve as a person, improve my Skills and learn about new Technologies, in order to become a Specialist (Front-end, Mobile and Web).',
+  educationTitle: 'Education',
 };
