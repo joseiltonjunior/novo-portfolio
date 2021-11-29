@@ -7,14 +7,13 @@ export const Container = styled.div`
 
   .button-side-menu {
     position: fixed;
+    z-index: 1000;
+    margin: 20px;
 
     button {
       background-color: transparent;
       border: 0;
     }
-
-    z-index: 1000;
-    margin: 20px;
 
     @media screen and (min-width: 900px) {
       display: none;

@@ -1,13 +1,16 @@
 import React from 'react';
 
+import { useTranslation } from 'react-i18next';
 import { Container } from './styles';
 
 import experience from './experience.json';
 
 export const SectionExperience: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <Container id="experience">
-      <p className="title-experience">Experiências</p>
+      <p className="title-experience">{t('experienceTitle')}</p>
 
       <div className="content-experience">
         {experience.map((item, index) => (

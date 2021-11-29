@@ -24,18 +24,18 @@ export const Background = styled.div`
   margin: 5rem 0;
 
   .trails-text {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-family: 'Roboto Black';
     color: #f5f5f5;
     text-shadow: 1px 3px 0 #030b16, 1px 13px 5px #030b16;
     letter-spacing: 1rem;
 
     @media screen and (max-width: 700px) {
-      font-size: 2.5rem;
+      font-size: 2rem;
     }
 
     @media screen and (max-width: 500px) {
-      font-size: 2rem;
+      font-size: 1.2rem;
     }
   }
 `;
