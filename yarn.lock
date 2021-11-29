@@ -1535,7 +1535,7 @@
     "@react-spring/shared" "~9.3.0"
     "@react-spring/types" "~9.3.0"
 
-"@react-spring/core@~9.3.0":
+"@react-spring/core@^9.3.1", "@react-spring/core@~9.3.0":
   version "9.3.1"
   resolved "https://registry.yarnpkg.com/@react-spring/core/-/core-9.3.1.tgz#b98e1dca1eb4871dec75fdab350327e8a5222865"
   integrity sha512-8rmfmEHLHGtF1CUiXRn64YJqsXNxv2cGX8oNnBnsuoE33c48Zc34t2VIMB4R9q5zwIUCvDBGfiEenA8ZAPxqOQ==
