@@ -1,12 +1,12 @@
 import { SocialLinks } from 'components/SocialLinks';
 import { MdSettingsSuggest } from 'react-icons/md';
 
-// import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
 import { Container } from './styles';
 
 export const SideMenu: React.FC = () => {
-  // const { t } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <Container>
@@ -58,7 +58,7 @@ export const SideMenu: React.FC = () => {
                 data-bs-dismiss="offcanvas"
                 aria-label="Close"
               >
-                Sobre
+                {t('aboutTitle')}
               </button>
             </a>
             <a href="#experience">
@@ -67,7 +67,7 @@ export const SideMenu: React.FC = () => {
                 data-bs-dismiss="offcanvas"
                 aria-label="Close"
               >
-                Experiências
+                {t('experienceTitle')}
               </button>
             </a>
           </div>
@@ -122,7 +122,7 @@ export const SideMenu: React.FC = () => {
                 data-bs-dismiss="offcanvas"
                 aria-label="Close"
               >
-                Sobre
+                {t('aboutTitle')}
               </button>
             </a>
             <a href="#experience">
@@ -131,7 +131,7 @@ export const SideMenu: React.FC = () => {
                 data-bs-dismiss="offcanvas"
                 aria-label="Close"
               >
-                Experiências
+                {t('experienceTitle')}
               </button>
             </a>
           </div>
