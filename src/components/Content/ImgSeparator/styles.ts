@@ -34,7 +34,7 @@ export const Container = styled.div<imgOrderParam>`
   justify-content: center;
   align-items: center;
 
-  margin: 5rem 0;
+  /* margin: 5rem 0; */
 
   .trails-text {
     font-size: 2.5rem;

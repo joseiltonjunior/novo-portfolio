@@ -3,6 +3,7 @@ import SectionAbout from 'components/SectionAbout';
 import { SectionEducation } from 'components/SectionEducation';
 import { SectionExperience } from 'components/SectionExperience';
 import { SectionInital } from 'components/SectionInital';
+import { SectionSkills } from 'components/SectionSkills';
 
 import { Container } from './styles';
 
@@ -18,7 +19,9 @@ export const Content: React.FC = () => {
 
       <SectionEducation />
 
-      <ImgSeparator order={3} title="Modern" />
+      <ImgSeparator order={3} title="Animated" />
+
+      <SectionSkills />
     </Container>
   );
 };

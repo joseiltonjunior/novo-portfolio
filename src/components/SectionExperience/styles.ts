@@ -6,6 +6,9 @@ export const Container = styled.div`
   flex-direction: column;
   margin: 0 3rem;
   align-items: center;
+  justify-content: center;
+
+  min-height: 100vh;
 
   @media screen and (max-width: 400px) {
     margin: 0 1rem;
