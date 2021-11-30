@@ -79,6 +79,8 @@ export const Container = styled.div`
       font-size: 1.1rem;
       font-family: 'Roboto Regular';
 
+      transition: all 0.2s;
+
       color: #f5f5f5;
       :hover {
         background-color: ${shade(0.1, 'rgba(155, 155, 155, 0.5)')};
