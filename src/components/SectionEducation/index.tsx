@@ -9,7 +9,7 @@ export const SectionEducation: React.FC = () => {
   const { t } = useTranslation();
 
   return (
-    <Container>
+    <Container id="education">
       <p className="title-education">{t('educationTitle')}</p>
 
       <div className="content-education">

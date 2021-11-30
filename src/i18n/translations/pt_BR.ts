@@ -8,4 +8,5 @@ export const TRANSLATIONS_PT_BR = {
   aboutTextSecondary:
     'Em busca de novos desafios para evoluir como pessoa, melhorar minhas Skills e conhecer novas Tecnologias, afim de me tornar um Especialista (Front-end, Mobile e Web).',
   educationTitle: 'Educação',
+  skillsTitle: 'Habilidades',
 };

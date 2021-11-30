@@ -8,4 +8,5 @@ export const TRANSLATIONS_EN_US = {
   aboutTextSecondary:
     'Looking for new challenges to evolve as a person, improve my Skills and learn about new Technologies, in order to become a Specialist (Front-end, Mobile and Web).',
   educationTitle: 'Education',
+  skillsTitle: 'Skills',
 };

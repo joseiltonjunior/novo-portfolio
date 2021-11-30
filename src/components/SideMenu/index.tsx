@@ -70,6 +70,24 @@ export const SideMenu: React.FC = () => {
                 {t('experienceTitle')}
               </button>
             </a>
+            <a href="#education">
+              <button
+                type="button"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              >
+                {t('educationTitle')}
+              </button>
+            </a>
+            <a href="#skills">
+              <button
+                type="button"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              >
+                {t('skillsTitle')}
+              </button>
+            </a>
           </div>
         </div>
       </div>
@@ -132,6 +150,24 @@ export const SideMenu: React.FC = () => {
                 aria-label="Close"
               >
                 {t('experienceTitle')}
+              </button>
+            </a>
+            <a href="#education">
+              <button
+                type="button"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              >
+                {t('educationTitle')}
+              </button>
+            </a>
+            <a href="#skills">
+              <button
+                type="button"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              >
+                {t('skillsTitle')}
               </button>
             </a>
           </div>
