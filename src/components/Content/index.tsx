@@ -1,4 +1,5 @@
 import { ImgSeparator } from 'components/Content/ImgSeparator';
+
 import SectionAbout from 'components/SectionAbout';
 import { SectionEducation } from 'components/SectionEducation';
 import { SectionExperience } from 'components/SectionExperience';

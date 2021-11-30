@@ -33,15 +33,10 @@ export const Container = styled.div`
   }
 
   .content-icons {
-    svg {
-      margin: 10px;
-      height: 3rem;
-      width: 3rem;
-      fill: #969696;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 
-      :hover {
-        fill: #f5f5f5;
-      }
-    }
+    gap: 1rem;
   }
 `;

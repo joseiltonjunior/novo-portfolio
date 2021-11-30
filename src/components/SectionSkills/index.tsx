@@ -18,6 +18,7 @@ import {
   FaMobile,
 } from 'react-icons/fa';
 
+import { Skill } from 'components/SectionSkills/Skill';
 import { Container } from './styles';
 
 export const SectionSkills: React.FC = () => {
@@ -28,133 +29,52 @@ export const SectionSkills: React.FC = () => {
       <div className="content-skills">
         <p className="title-skills">{t('skillsTitle')}</p>
         <div className="content-icons">
-          <a
-            href="https://developer.mozilla.org/pt-BR/docs/Web/html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaHtml5 />
-          </a>
+          <Skill
+            icon={FaHtml5}
+            url="https://developer.mozilla.org/pt-BR/docs/Web/html"
+          />
 
-          <a
-            href="https://developer.mozilla.org/pt-BR/docs/Web/css"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaCss3 />
-          </a>
+          <Skill
+            icon={FaCss3}
+            url="https://developer.mozilla.org/pt-BR/docs/Web/css"
+          />
 
-          <a
-            href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaJsSquare />
-          </a>
+          <Skill
+            icon={FaJsSquare}
+            url="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"
+          />
 
-          <a
-            href="https://www.typescriptlang.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <SiTypescript />
-          </a>
+          <Skill icon={SiTypescript} url="https://www.typescriptlang.org/" />
 
-          <a
-            href="http://getbootstrap.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaBootstrap />
-          </a>
+          <Skill icon={FaBootstrap} url="http://getbootstrap.com" />
 
-          <a
-            href="http://pt-br.reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaReact />
-          </a>
+          <Skill icon={FaReact} url="http://pt-br.reactjs.org" />
 
-          <a
-            href="https://reactnative.dev"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaMobile />
-          </a>
+          <Skill icon={FaMobile} url="https://reactnative.dev" />
 
-          <a
-            href="https://nodejs.org/en"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaNode />
-          </a>
+          <Skill icon={FaNode} url="https://nodejs.org/en" />
 
-          <a
-            href="https://www.npmjs.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaNpm />
-          </a>
+          <Skill icon={FaNpm} url="https://www.npmjs.com" />
 
-          <a
-            href="https://yarnpkg.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaYarn />
-          </a>
+          <Skill icon={FaYarn} url="https://yarnpkg.com/" />
 
-          <a
-            href="https://git-scm.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaGit />
-          </a>
+          <Skill icon={FaGit} url="https://git-scm.com" />
 
-          <a
-            href="https://github.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaGithub />
-          </a>
+          <Skill icon={FaGithub} url="https://github.com" />
 
-          <a
-            href="https://www.microsoft.com/pt-br/windows"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaWindows />
-          </a>
+          <Skill
+            icon={FaWindows}
+            url="https://www.microsoft.com/pt-br/windows"
+          />
 
-          <a
-            href="https://linuxmint.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaLinux />
-          </a>
+          <Skill icon={FaLinux} url="https://4linux.com.br/o-que-e-linux/" />
 
-          <a
-            href="https://www.cypress.io"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <SiCypress />
-          </a>
+          <Skill icon={SiCypress} url="https://www.cypress.io" />
 
-          <a
-            href="https://azure.microsoft.com/pt-br/services/devops"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <SiAzuredevops />
-          </a>
+          <Skill
+            icon={SiAzuredevops}
+            url="https://azure.microsoft.com/pt-br/services/devops"
+          />
         </div>
       </div>
     </Container>
